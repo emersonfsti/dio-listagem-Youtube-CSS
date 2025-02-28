@@ -10,9 +10,11 @@ Seja criativo(a) e personalize o projeto para torná-lo único! Um portfólio s�
 
 ---
 
-## 📷 Imagem do Resultado Final
+## 📷 Imagem do Resultado da Página feita em HTML/CSS
 
-*(Adicione aqui a imagem do resultado final do seu projeto, hospedada no próprio repositório ou em um serviço externo como Imgur.)*
+![Descrição da Imagem](./img/sitecloneyoutube.png)
+
+*Imagem da página de listagem de vídeos do YouTube criada com HTML e CSS.*
 
 ---
 
@@ -22,50 +24,41 @@ Seja criativo(a) e personalize o projeto para torná-lo único! Um portfólio s�
 - **CSS3** → Para estilização da interface.
 - **CSS Grid Layout** → Para organização dos elementos na página.
 - **Flexbox** → Para controle de alinhamento e espaçamento.
-
----
-
-## 📌 Funcionalidades Implementadas
-
-✅ Cabeçalho com logo, barra de pesquisa e ícones de perfil.
-✅ Barra lateral com categorias navegáveis.
-✅ Grade de vídeos utilizando **CSS Grid Layout**.
-✅ Design responsivo para diferentes tamanhos de tela.
-✅ Efeito hover nos vídeos para interatividade.
-✅ Estilização moderna e similar à interface do YouTube.
-
----
-
-## 🎨 Link do Design no Figma
-
-Aqui está o link do **Design no Figma** apresentado durante o desafio para que você possa usá-lo como referência:
-
-🔗 [Figma - Layout do Projeto](#) *(Substitua pelo link real do Figma)*
-
----
-
-## 📂 Como Executar o Projeto Localmente
-
-1. Clone o repositório para sua máquina:
-   ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
-   ```
-2. Acesse a pasta do projeto:
-   ```bash
-   cd nome-do-repositorio
-   ```
-3. Abra o arquivo `index.html` no navegador.
-
----
+- **Figma** → Para design e prototipação da interface.
+- **Git e GitHub** → Para versionamento e hospedagem do código.
 
 ## 🚀 Próximos Passos
-
-🔹 Melhorar a responsividade para telas menores.
-🔹 Adicionar JavaScript para tornar a experiência interativa.
-🔹 Implementar um modo escuro (dark mode).
-
----
+🔹 Melhorar a responsividade para telas menores, como smartphones.
+🔹 Adicionar JavaScript para tornar a experiência interativa (ex: reprodução de vídeos, carregamento dinâmico).
+🔹 Implementar um modo escuro (dark mode) para melhorar a acessibilidade.
+🔹 Adicionar animações para transições entre páginas ou elementos.
+🔹 Integrar com a API do YouTube para buscar vídeos reais.
+🔹 Otimizar o desempenho do CSS e HTML para carregamento mais rápido.
+🔹 Adicionar testes de usabilidade e acessibilidade.
 
 ## 📝 Autor
+Feito com  por Emerson Felix.
 
-Feito com por **[Emerson Felix](https://github.com/emersonfsti)**.
+Contato:
+- 📧 emerson.felix@example.com
+- 🔗 LinkedIn (Substitua pelo link real do LinkedIn)
+- 🐦 Twitter (Substitua pelo link real do Twitter)
+
+🤝 Contribuição
+Contribuições são bem-vindas! Se você quiser melhorar este projeto, siga os passos abaixo:
+
+Faça um fork do projeto.
+Crie uma branch para sua feature (git checkout -b feature/nova-feature).
+Commit suas mudanças (git commit -m 'Adicionando nova feature').
+Push para a branch (git push origin feature/nova-feature).
+Abra um Pull Request.
+
+
+🙌 Agradecimentos
+À equipe da DIO pelo desafio inspirador.
+À comunidade de desenvolvedores por compartilhar conhecimento e recursos.
+Aos criadores de conteúdo que disponibilizam materiais gratuitos para aprendizado.
+
+📌 Dicas Extras
+- Teste seu projeto em diferentes navegadores (Chrome, Firefox, Edge) para garantir a consistência.
+- Documente seu código para facilitar a manutenção e colaboração.
