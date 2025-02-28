@@ -1,0 +1,202 @@
+/* Remove margens e preenchimentos padrão e define o modelo de caixa para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define a fonte padrão para o corpo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Define a cor dos ícones da classe material-icons */
+.material-icons {
+    color: rgb(96, 96, 96);
+}
+
+/* Estiliza o cabeçalho */
+header {
+    display: flex; /* Usa flexbox para organizar os elementos */
+    justify-content: space-between; /* Distribui os itens ao longo do cabeçalho */
+    align-items: center; /* Centraliza os itens verticalmente */
+    height: 70px; /* Define a altura do cabeçalho */
+    padding: 15px; /* Adiciona espaçamento interno */
+    background: linear-gradient(to right, #c0bfbf, #ffffff, #c1c2c2); /* Aplica um degradê ao fundo */
+}
+
+/* Define a seção esquerda do cabeçalho */
+.header-left {
+    display: flex; /* Organiza os elementos em linha */
+    align-items: center; /* Alinha verticalmente os itens */
+}
+
+/* Define o tamanho e o espaçamento do logo do YouTube */
+.logoyoutube {
+    width: 100px; /* Define a largura do logo */
+    margin-left: 15px; /* Adiciona espaçamento à esquerda */
+}
+
+/* Define o espaçamento e o cursor para os ícones dentro do cabeçalho */
+header i {
+    padding: 0px 7px;
+    cursor: pointer; /* Muda o cursor para indicar interatividade */
+}
+
+/* Estiliza o campo de pesquisa dentro do cabeçalho */
+.header-search form {
+    border: 1px solid #ddd; /* Define uma borda ao redor do campo */
+    height: 35px; /* Define a altura do campo */
+    display: flex; /* Organiza os elementos do formulário em linha */
+    border-radius: 75px; /* Arredonda as bordas */
+}
+
+/* Estiliza o campo de entrada de texto na pesquisa */
+.header-search input {
+    width: 500px; /* Define a largura do campo de entrada */
+    padding: 10px; /* Adiciona espaçamento interno */
+    border-radius: 75px; /* Arredonda as bordas */
+    border: none; /* Remove a borda padrão */
+}
+
+/* Estiliza o botão de pesquisa */
+.header-search button {
+    height: 100%; /* Faz o botão ocupar toda a altura do campo */
+    border: none; /* Remove a borda */
+    border-radius: 75px; /* Arredonda as bordas */
+}
+
+/* Estiliza o avatar do usuário no cabeçalho */
+.user-avatar {
+    width: 35px; /* Define a largura da imagem */
+    height: 35px; /* Define a altura da imagem */
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Garante que a imagem se ajuste corretamente */
+    cursor: pointer; /* Indica interatividade */
+}
+
+/* Define a estrutura principal da página */
+main {
+    height: calc(100vh - 70px); /* Ajusta a altura para ocupar toda a tela, menos o cabeçalho */
+    display: flex; /* Usa flexbox para organizar os elementos */
+    overflow: hidden; /* Oculta conteúdos que ultrapassem os limites */
+}
+
+/* Estiliza a barra lateral */
+.sidebar {
+    height: 100%; /* Define a altura total da barra lateral */
+    width: 230px; /* Define a largura da barra lateral */
+    background: linear-gradient(to right, #d1d0d0, #ffffff); /* Aplica um degradê no fundo */
+    overflow: scroll; /* Adiciona rolagem caso o conteúdo ultrapasse o limite */
+}
+
+/* Organiza as categorias da barra lateral */
+.sidebar-categories {
+    width: 100%; /* Ocupa toda a largura disponível */
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Organiza os itens em coluna */
+    margin: 15px; /* Adiciona espaçamento ao redor */
+}
+
+/* Estiliza cada categoria dentro da barra lateral */
+.sidebar-category {
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Centraliza os itens verticalmente */
+    padding: 12px 25px; /* Define espaçamento interno */
+}
+
+/* Define um espaçamento entre o ícone e o texto da categoria */
+.sidebar-category span {
+    margin-left: 15px;
+}
+
+/* Aplica um efeito ao passar o mouse sobre uma categoria */
+.sidebar-category:hover {
+    background: #cecdcd; /* Muda a cor de fundo */
+    cursor: pointer; /* Indica interatividade */
+    border-radius: 5px; /* Arredonda as bordas */
+}
+
+/* Remove a barra de rolagem da barra lateral */
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estiliza as linhas divisórias */
+hr {
+    height: 1px;
+    background-color: #e5e5e5; /* Define a cor da linha */
+    border: none; /* Remove a borda */
+}
+
+/* Estiliza o contêiner dos vídeos */
+.videos-container {
+    display: grid; /* Usa o modelo de grade */
+    grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas de tamanho igual */
+    grid-template-rows: repeat(3, auto); /* Cria 3 linhas automáticas */
+    gap: 15px; /* Define espaçamento entre os itens */
+    padding: 20px; /* Adiciona espaçamento interno */
+    overflow-y: auto; /* Adiciona rolagem vertical caso necessário */
+    width: 100%; /* Faz o contêiner ocupar toda a largura disponível */
+}
+
+/* Define o layout de cada vídeo */
+.video {
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Organiza os itens verticalmente */
+    align-items: center; /* Centraliza os itens */
+    width: 300px; /* Define a largura do vídeo */
+}
+
+/* Estiliza as imagens dos vídeos */
+.video img {
+    width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+    border-radius: 10px; /* Arredonda as bordas */
+}
+
+/* Aplica um efeito ao passar o mouse sobre a imagem */
+.video img:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente a imagem */
+}
+
+/* Estiliza a seção de informações do vídeo */
+.video-info {
+    display: flex; /* Usa flexbox */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    gap: 10px; /* Define espaçamento entre os itens */
+    padding: 10px 0; /* Adiciona espaçamento vertical */
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+
+/* Estiliza o logo do canal */
+.channel-logo {
+    height: auto; /* Mantém a proporção da imagem */
+    width: 20%; /* Define a largura como 20% do contêiner */
+    max-width: 40px; /* Define um tamanho máximo */
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Garante que a imagem não seja distorcida */
+    flex-shrink: 0; /* Impede que a imagem diminua além do limite */
+}
+
+/* Estiliza o título do vídeo */
+.video-title {
+    font-size: 14px; /* Define o tamanho da fonte */
+    font-weight: bold; /* Aplica negrito */
+    color: #333; /* Define a cor do texto */
+    text-align: left; /* Alinha o texto à esquerda */
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Organiza os itens verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    width: 80%; /* Define a largura como 80% do contêiner */
+}
+
+/* Estiliza o nome do canal */
+.video-channel {
+    font-size: 12px; /* Define o tamanho da fonte */
+    color: #606060; /* Define a cor do texto */
+    text-align: left; /* Alinha o texto à esquerda */
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Organiza os itens verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    width: 80%; /* Define a largura como 80% do contêiner */
+}
